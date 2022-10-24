@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CEB36DA9290557180095DCAB /* notestestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB36DA8290557180095DCAB /* notestestApp.swift */; };
-		CEB36DAB290557180095DCAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB36DAA290557180095DCAB /* ContentView.swift */; };
 		CEB36DAD290557190095DCAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB36DAC290557190095DCAB /* Assets.xcassets */; };
 		CEB36DB0290557190095DCAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB36DAF290557190095DCAB /* Preview Assets.xcassets */; };
+		CEB36DBA290557B00095DCAB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB36DB9290557B00095DCAB /* ListView.swift */; };
+		CEB36DBF29055B4F0095DCAB /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB36DBE29055B4F0095DCAB /* ListRowView.swift */; };
+		CEB36E2E29057D260095DCAB /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB36E2D29057D260095DCAB /* AddView.swift */; };
+		CEF3BA252905B5EC00A55E4E /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3BA242905B5EC00A55E4E /* ItemModel.swift */; };
+		CEF3BA2A2905C02500A55E4E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3BA292905C02500A55E4E /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEB36DA5290557180095DCAB /* notestest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notestest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB36DA8290557180095DCAB /* notestestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notestestApp.swift; sourceTree = "<group>"; };
-		CEB36DAA290557180095DCAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEB36DAC290557190095DCAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB36DAF290557190095DCAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEB36DB1290557190095DCAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB36DB9290557B00095DCAB /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		CEB36DBE29055B4F0095DCAB /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		CEB36E2D29057D260095DCAB /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		CEF3BA242905B5EC00A55E4E /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		CEF3BA292905C02500A55E4E /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				CEB36DA8290557180095DCAB /* notestestApp.swift */,
-				CEB36DAA290557180095DCAB /* ContentView.swift */,
+				CEF3BA282905BFF800A55E4E /* ViewModels */,
+				CEF3BA232905B5CA00A55E4E /* Models */,
+				CEB36DB82905577E0095DCAB /* Views */,
 				CEB36DAC290557190095DCAB /* Assets.xcassets */,
 				CEB36DB1290557190095DCAB /* Info.plist */,
 				CEB36DAE290557190095DCAB /* Preview Content */,
@@ -67,6 +77,32 @@
 				CEB36DAF290557190095DCAB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEB36DB82905577E0095DCAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEB36DB9290557B00095DCAB /* ListView.swift */,
+				CEB36DBE29055B4F0095DCAB /* ListRowView.swift */,
+				CEB36E2D29057D260095DCAB /* AddView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEF3BA232905B5CA00A55E4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3BA242905B5EC00A55E4E /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEF3BA282905BFF800A55E4E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3BA292905C02500A55E4E /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB36DAB290557180095DCAB /* ContentView.swift in Sources */,
+				CEF3BA252905B5EC00A55E4E /* ItemModel.swift in Sources */,
+				CEB36E2E29057D260095DCAB /* AddView.swift in Sources */,
+				CEF3BA2A2905C02500A55E4E /* ListViewModel.swift in Sources */,
 				CEB36DA9290557180095DCAB /* notestestApp.swift in Sources */,
+				CEB36DBA290557B00095DCAB /* ListView.swift in Sources */,
+				CEB36DBF29055B4F0095DCAB /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
